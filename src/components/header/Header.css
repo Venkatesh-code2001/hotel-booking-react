@@ -1,0 +1,122 @@
+.header{
+    background-color: rgba(10, 85, 224, 0.656);
+    color: white; 
+    display: flex;
+    justify-content: center;
+    position: relative;    
+}
+.headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+.headerContainer.listMode{
+    margin: 20px 0px 20px 0px;
+}
+.headerList{
+   display: flex;
+   gap: 40px; 
+}
+.headerListItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.headerListItem.active{
+    border: 1.5px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}  
+
+.headerDesc{
+    margin: 20px 0px;
+}
+.headerBtn{
+    border: none;
+    color: rgba(10, 85, 224, 0.656);
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.headerSearch{
+    width: 100%;
+    max-width: 1024px; 
+    height: 30px;
+    background-color: white;
+    border: 3px solid yellow;
+    border-radius: 5px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -25px; /* Padding + height = 50px */
+    /* bottom: -10%; */ /* This is also working */
+    z-index: 2;
+}
+.headerIcon{
+    color: lightgray;
+}
+.headerSearchItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.headerSearchInput{
+    border: none;
+    outline: none;
+}
+.headerSearchText{
+    color: lightgray;
+    cursor: pointer;
+}
+.date{
+    position: absolute;
+    top: 50px;
+}
+.options{
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.optionItem{
+    display: flex;
+    justify-content: space-between;
+}
+.optionsCounter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+.optionCounterButton{
+    /* height: 30px;
+    width:30px; */
+    background-color: white;
+    border: 1px solid rgba(10, 85, 224, 0.656);
+    color: rgba(10, 85, 224, 0.656);
+    cursor: pointer;
+}
+.optionCounterButton:disabled{
+    cursor: not-allowed;
+}
+.headerSearchBtn{
+    border: none;
+    background-color: rgba(10, 85, 224, 0.656);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,58 @@
+.booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px; 
+}
+.container{
+    border: 1px solid black;
+    background-color: rgba(210, 207, 203, 0.575);
+    gap: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+}
+.rooms{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    border: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 136, 255, 0.761);
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    width: 360px;
+    cursor: pointer;
+}
+.paymentSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(4, 11, 7, 0.608);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(165, 149, 42, 0.429);
+}
+.paymentSection>h1{
+    color: rgb(128, 28, 0);
+}
+.paymentSection>p>b{
+    color: rgb(255, 0, 25);
+}
+.warning{
+    border: 1px solid black;
+    background-color: rgba(227, 217, 217, 0.761);
+    padding: 20px;
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+}
