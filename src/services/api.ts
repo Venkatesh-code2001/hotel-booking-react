@@ -1,7 +1,16 @@
 import axios from 'axios';
 import { Hotel, Room, Booking, CityCount } from '../types';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://hotelbackend-k5b1.onrender.com/api';
+const getApiBaseUrl = (): string => {
+  let url = (process.env.REACT_APP_API_URL || 'https://hotelbackend-k5b1.onrender.com/api').trim();
+  url = url.replace(/\/+$/, '');
+  if (!url.endsWith('/api')) {
+    url += '/api';
+  }
+  return url;
+};
+
+const API_BASE_URL = getApiBaseUrl();
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
