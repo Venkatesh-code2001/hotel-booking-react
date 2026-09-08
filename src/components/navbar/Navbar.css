@@ -1,26 +1,109 @@
-.navbar{ 
-    background-color: rgba(10, 85, 224, 0.656);
-    height: 50px;
-    display: flex;
-    justify-content: center; 
-}
-.navContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1024px;
-    color: white;
-}
-.logo{
-    font-weight: 500;
+.navbar {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.navButton{
-    border: none;
-    cursor: pointer;
-    margin-left: 20px;
-    padding: 5px 10px;
-    color: rgba(10, 85, 224, 0.656);
-    border-radius: 3px;
-} 
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 20px;
+  color: white;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logoWrapper:hover {
+  transform: translateY(-1px);
+}
+
+.logoBadge {
+  background: linear-gradient(135deg, #2563EB 0%, #06B6D4 100%);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.logoText {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+}
+
+.logoHighlight {
+  color: #38BDF8;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navButton {
+  border: none;
+  cursor: pointer;
+  padding: 9px 18px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+}
+
+.navButtonSecondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #E2E8F0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navButtonSecondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+.navButtonPrimary {
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  color: white;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+}
+
+.navButtonPrimary:hover {
+  background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+}
+
+@media (max-width: 640px) {
+  .navContainer {
+    padding: 0 15px;
+  }
+  .logoText {
+    font-size: 18px;
+  }
+  .navButton {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}

@@ -1,36 +1,89 @@
-.mail{
-    width: 100%;
-    margin-top: 50px;
-    background-color: #5F90EB;
-    color: white;
-    display: flex;
+.mail {
+  width: 100%;
+  margin-top: 60px;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #0F2847 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.mailTitle {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.mailDesc {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #94A3B8;
+  max-width: 500px;
+}
+
+.mailInputContainer {
+  display: flex;
+  align-items: center;
+  max-width: 480px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mailInputContainer > input {
+  height: 44px;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-size: 14px;
+  background: transparent;
+  color: white;
+  font-family: inherit;
+}
+
+.mailInputContainer > input::placeholder {
+  color: #94A3B8;
+}
+
+.mailInputContainer > button {
+  height: 44px;
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 9999px;
+  padding: 0 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.mailInputContainer > button:hover {
+  background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 500px) {
+  .mailInputContainer {
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 50px;
-}
-.mailDesc{
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-.mailInputContainer>input{
-    height: 30px;
-    width: 300px;
-    border: none;
-    outline: none;
+    border-radius: 16px;
     padding: 10px;
-    /* margin-right: 10px; */
-    border-radius: 5px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-.mailInputContainer>button{
-    height: 50px;
-    background-color: rgb(255, 247, 0);
-    font-weight: 200;
-    border: none;
-    border-radius: 5px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    cursor: pointer;
+    gap: 10px;
+  }
+  .mailInputContainer > button {
+    width: 100%;
+    border-radius: 12px;
+  }
+  .mailTitle {
+    font-size: 24px;
+  }
 }
